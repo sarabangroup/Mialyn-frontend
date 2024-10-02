@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mialyn | HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+</head>
+<body>
+    <header class="sticky">
+        <div class="logo" style="font-weight: 500;">
+          <a href="#"><img src="images/logo-mialyn-removebg-preview.png" ></a>
+        </div>
+        <span id="sidebarBtn" onclick="openSidebar()">&#9776;</span>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="product.html">Our Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Sidebar -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a href="#">Home</a>
+        <a href="product.html">Our Product</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+       <!-- Main Content -->
+  
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <h1 style="text-align: center;">MIALYN</h1>
+          <h1>WHERE <span style="color: rgb(226, 43, 205);">COMFORT</span> MEETS <span
+              style="color: rgb(226, 43, 205);">CARE</span></h1>
+        </div>
+        <p>Her pain becomes her path,forged by the unwavering strength
+          of a woman who turned suffering into resilence</p>
+      </div>
+    
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h1>About</h1>
+          <p>
+            MIALYN is committed to providing the best in comfort and care with our sanitary napkins. Our products are
+            designed with eco-friendly materials and certified for safety, ensuring that women experience maximum comfort
+            and confidence.
+          </p>
+          <button class="read-more"><a href="about.html" style="text-decoration: none; color: aliceblue;">Read
+              More</a></button>
+        </div>
+        <div class="about-image">
+          <img src="images/padsimage(1).png" alt="About MIALYN">
+        </div>
+      </div>
+    </section>
+   
+    
+
+    <section class="feature" id="feature">
+      <div class="feature-content">
+        <div class="feature-image">
+          <img src="images/layerimage.jpg" alt="World's First 10 Layer Napkin">
+        </div>
+        <div class="feature-text">
+          <h1>World's First 10 Layer Napkin</h1>
+          <p>
+            Experience unparalleled protection and comfort with MIALYN's revolutionary 10-layer sanitary napkin. Designed
+            with advanced technology, our napkin provides maximum absorbency, ensuring you stay dry and confident throughout
+            the day.
+          </p>
+          <p>
+            Our innovative design features breathable materials and hypoallergenic layers, making it safe for all skin
+            types. Say goodbye to discomfort and hello to freedom with MIALYN!
+          </p>
+          <a href="product.html"><button class="know-more">Know More</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+    <div class="container">
+      <h1>Leave a Review</h1>
+      <div class="review-form">
+          <form id="reviewForm">
+              <div class="stars" id="starRating">
+                  <input type="radio" name="star" id="star5" value="5" required>
+                  <label for="star5" class="star">&#9733;</label>
+                  <input type="radio" name="star" id="star4" value="4" required>
+                  <label for="star4" class="star">&#9733;</label>
+                  <input type="radio" name="star" id="star3" value="3" required>
+                  <label for="star3" class="star">&#9733;</label>
+                  <input type="radio" name="star" id="star2" value="2" required>
+                  <label for="star2" class="star">&#9733;</label>
+                  <input type="radio" name="star" id="star1" value="1" required>
+                  <label for="star1" class="star">&#9733;</label>
+              </div>
+              <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+              <button type="submit">Submit Review</button>
+          </form>
+          <div id="responseMessage"></div>
+      </div>
+    </section>
+      <h2>Reviews</h2>
+      <div class="slider-container">
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <div id="reviewsContainer" class="slider"></div>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+  </div>
+
+    
+    
+       
+    
+    
+
+
+      <div class="contact-footer">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+              <a href="#" class="fab fa-youtube"></a>
+
+        </div>
+  </div>
+
+
+
+
+  <div class="copywrite">
+        <p class="info">
+              &copy; 2024 <a href="#" target="_blank"
+                    style="text-decoration-line: none;color: black;"><b>MIALYN</b> </a>
+        </p>
+  </div>
+
+</section>
+
+      
+
+
+
+
+
+
+      
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
