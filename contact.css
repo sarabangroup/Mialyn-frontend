@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.contact-bg{
+    height: 40vh;
+    background: linear-gradient(#ff94e8,#c7c7c7);
+    background-position: 5% 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #530363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+  
+    border-radius: 50%;
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #630168;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #610170;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+   background: #ff94e8;
+}
+.contact-form > div img{
+    width: 60%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: #ff94e8;
+    border-color: #ff94e8;
+}
+
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+ 
+  /* Navigation */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #610170;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+  .logo img {
+    width: 140px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #ff94e8;
+    color: #000000;
+    border-radius: 41px;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #610170;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #530363;
+    border-radius: 20px;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Sidebar toggle button */
+  #sidebarBtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Hide the sidebar toggle button by default */
+  #sidebarBtn {
+    display: none;
+  }
+  
+  /* Content */
+  .content {
+    margin-left: 260px; /* Ensure content doesn't overlap with sidebar */
+    padding: 20px;
+  }
+
+
+  
+/* Responsive Design for Sidebar and Navigation */
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 0;
+        position: fixed;
+    }
+  
+    .content {
+        margin-left: 0;
+    }
+  
+    nav {
+        display: none;
+    }
+  
+    #sidebarBtn {
+        display: block;
+        
+    }
+    .sidebar a{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .logo img {
+      width: 100px;
+      margin-top: 10px;
+      transition: transform 0.3s ease-in-out;
+  }
+    
+  }
+  
+  /* Tablets (min-width: 481px and max-width: 768px) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        position: fixed;
+    }
+  
+    .content {
+        margin-left: 0;
+    }
+  
+    nav {
+        display: none;
+    }
+  
+    #sidebarBtn {
+        display: block;
+    }
+    .sidebar a{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    
+  }
+  
+  /* Laptops and Small Desktops (min-width: 769px and max-width: 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+  
+    .content {
+        margin-left: 260px;
+    }
+  
+    nav {
+        display: flex;
+    }
+  
+    #sidebarBtn {
+        display: none;
+    }
+  }
+  
+  /* Large Screens and Desktops (min-width: 1025px) */
+  @media screen and (min-width: 1025px) {
+    .sidebar {
+        display: none;
+    }
+  
+    .content {
+        margin-left: 260px;
+    }
+  
+    nav {
+        display: flex;
+    }
+  
+    #sidebarBtn {
+        display: none;
+    }
+  }
+
+  .copywrite{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#ffdaf9,#ff9dea);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h2{
+    font-size: 20px;
+    color: #530363;
+  }
+  
+  .hero h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #530363;
+  }
+  .hero a{
+    font-size: 20px;
+    color: #fff;
+  }
